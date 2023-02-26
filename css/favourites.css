@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-image: url("../images/background\ -\ favouites.jpeg");
+    background-position: center center;
+    background-color: #9b74de;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0 20px;
+}
+#home-link{
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #f5f0f0;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+#home-link:hover {
+    color: rgb(224, 209, 11);
+   
+}
+
+#home-link::before{
+    content: " ";
+    border:3px solid rgb(228, 125, 125);
+    transition: all 0.5s ease-in-out;
+}
+
+#home-link:hover::before{
+    border: 3px solid rgb(238, 242, 242);
+}
+h1{
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: bold;
+    color: antiquewhite;
+    margin: 20px;
+}
+.all-fav{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.favourite-container{
+    width: 250px;
+    min-height: 300px;
+    background-color: #70b1dab5;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.favourite-container img{
+    width: 200px;
+    height: 230px;
+    border-radius: 5px;
+}
+
+.favourite-container h2{
+    font-size: large;
+    font-weight: bold;
+    margin: 5px;
+}
+
+/* clear all link */
+
+#clear-all-link{
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #b2eee5;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+#clear-all-link:hover {
+    color: rgb(4, 157, 227);
+   
+}
+
+#clear-all-link::before{
+    content: " ";
+    border:3px solid rgb(160, 231, 106);
+    transition: all 0.5s ease-in-out;
+}
+
+#clear-all-link:hover::before{
+    border: 3px solid rgb(4, 168, 168);
+}
