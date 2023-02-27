@@ -16,6 +16,19 @@ body{
     background-size: cover;
     padding: 0 20px;
 }
+/* 
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: red;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 0.5rem;
+    border: 0.1rem solid transparent;
+    background-clip: content-box;
+} */
 
 #favourite-link{
     margin: 20px;
@@ -147,31 +160,32 @@ body{
 
 #hero-details .info{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
 }
 
 #hero-details .info img{
-    height: 350px;
+    height: 320px;
     width: 300px;
     border-radius: 4px;
-    margin: 0px 20px;
+    margin: 0px 10px;
 }
 /* Hero Description */
 .description{
-    text-align: left;
+    text-align: center;
 }
 
 .description h1{
     font-size: 40px;
     font-weight: bold;
     color: #2e0e1ae7;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .description p{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
     margin: 20px auto;
 }
@@ -189,4 +203,41 @@ body{
 /* display */
 .display{
     display: none;
+}
+
+/* Media queries */
+@media (max-width:768px) {
+    #hero-details{
+        width: 70%;
+    }
+}
+
+@media (max-width: 640px) {
+    #hero-details{
+        width: 80%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 640px){
+    #hero-details{
+        width: 95%;
+    }
+    #hero-details .info img{
+        height: 280px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 290px){
+    #hero-details{
+        width: 99%;
+    }
+    #hero-details .info img{
+        height: 250px;
+        width: 210px;
+    }
+    .description p{
+        font-size: 15px;
+        font-weight: 100;
+    }
 }
