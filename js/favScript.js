@@ -14,7 +14,7 @@ for(let i=0;i<localStorage.length;i++){
         <img src="${data.heroImg}" alt="${data.heroName}">
         <div class="data">
             <h2>${data.heroName}</h2>
-            <a href="/favourites.html" class="deletion" value="${data.heroName}"><i class="fas fa-trash"></i></a>
+            <a href="./favourites.html" class="deletion" value="${data.heroName}"><i class="fas fa-trash"></i></a>
         </div>`
 
     favContainer.appendChild(div);
